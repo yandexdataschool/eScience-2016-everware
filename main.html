@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<!--     <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
+    <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
+    <title>Remark</title>
+ --> 
+    <link rel="stylesheet" href="styles/slides-yandex.css"/>
+  </head>
+  <body>
+
+    <script src="downloads/remark-latest.min.js"></script>
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="downloads/remark.language.js"></script>
+
+    <!-- Katex stuff  -->
+    <link rel="stylesheet" href="downloads/katex.min.css">
+    <script src="downloads/katex.min.js"></script>
+    <script src="downloads/auto-render.min.js"></script>
+    <!-- end of Katex stuff  -->
+
+    <!-- MathJax stuff -->
+<!--     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script> 
+    <script src="downloads/jquery.min.js"></script>
+ -->    <!-- end of MathJax stuff -->
+    
+    <script>
+      var slideshow = remark.create({
+          sourceUrl: 'main.md',
+          highlightStyle: 'monokai',
+          highlightLanguage: 'Python',
+          highlightLines: true,
+          countIncrementalSlides: false,
+          slideNumberFormat: function (current, total) {
+            return current + ' / ' + total;
+          },
+          ratio: '16:9'
+      });
+      // Setup Katex
+      renderMathInElement(document.body, 
+        {delimiters: [
+           {left: "$$", right: "$$", display: true},
+           {left: "$", right: "$", display: false}
+           ]});
+      // Setup Katex
+
+      // Setup MathJax
+      // MathJax.Hub.Config({
+      //     tex2jax: {
+      //       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      //       inlineMath: [['$','$'], ['\\(','\\)']],
+      //       extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js"]
+      //     },
+      //     "HTML-CSS": { availableFonts: ["TeX"] }
+      // });
+      // MathJax.Hub.Queue(function() {
+      //     $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+      //         return(elem.SourceElement());
+      //     }).parent().addClass('has-jax');
+      // });
+      // MathJax.Hub.Configured();
+      // Setup MathJax
+    </script>
+<!--     <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44561333-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.scripts[0];
+        s.parentNode.insertBefore(ga, s);
+      }());
+    </script>
+ --> 
+  </body>
+</html>

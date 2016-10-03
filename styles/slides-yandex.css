@@ -1,0 +1,188 @@
+@import url(fonts.css);
+
+body {
+  font-family: 'Textbook';
+}
+h1, h2, h3 {
+  font-family: 'Textbook';
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.remark-slide-content h1 { font-size: 2.2em; }
+.remark-slide-content h2 { font-size: 1.8em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote-left {
+  position: absolute;
+  bottom: 1em;
+  left: 14em;
+  font-size: 0.7em;
+ }
+.footnote-center {
+  width: 100%;
+  position: absolute;
+  bottom: 12px;
+  left: 0px;
+  overflow: hidden;
+  /*margin: 5px auto 10px auto;*/
+  text-align: center;
+ }
+
+.header {
+  position: absolute;
+  top: 1.5em;
+  left: 3em;
+  font-size: 0.7em;
+ }
+
+.header-right {
+  position: absolute;
+  top: 1.5em;
+  right: 3em;
+  font-size: 0.7em;
+ }
+
+li {
+  line-height: 1.25em;
+  position: relative;
+  list-style: none;
+  left: -4px;
+}
+li p {
+  display: inline-block;
+}
+ol li { 
+  list-style: decimal;
+}
+ul li::before {
+  content: '〉 ';
+  color: rgb(254,195,0);
+}
+.libig li {
+  line-height: 2.25em;
+  font-size: 22px;
+}
+
+.red { color: #fa0000; }
+.green { color: #00fa00; }
+.blue { color: #0000fa; }
+.gray { color: #606060; }
+.large { font-size: 2em; }
+/*a, a > code {
+  color: rgb(249, 38, 114);
+  text-decoration: none;
+}
+*/code {
+  background: #e7e8e2;
+  border-radius: 5px;
+}
+.remark-code, .remark-inline-code { font-family: 'InputMono'; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ p {
+  clear: both;
+}
+#slideshow .slide .content code {
+  font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+  font-size: 0.9em;
+  padding: 15px;
+}
+.inverse {
+  /*background: #272822;*/
+  background: rgb(254,195,0);
+  color: #000;
+  /*text-shadow: 0 0 20px #333;*/
+}
+.inverse h1, .inverse h2 {
+  color: #000;
+  line-height: 0.8em;
+}
+
+/* Slide-specific styling */
+#slide-inverse .footnote {
+  bottom: 12px;
+  left: 20px;
+}
+#slide-how .slides {
+  font-size: 0.9em;
+  position: absolute;
+  top:  151px;
+  right: 140px;
+}
+#slide-how .slides h3 {
+  margin-top: 0.2em;
+}
+#slide-how .slides .first, #slide-how .slides .second {
+  padding: 1px 20px;
+  height: 90px;
+  width: 120px;
+  -moz-box-shadow: 0 0 10px #777;
+  -webkit-box-shadow: 0 0 10px #777;
+  box-shadow: 0 0 10px #777;
+}
+#slide-how .slides .first {
+  background: #fff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+}
+#slide-how .slides .second {
+  position: relative;
+  background: #fff;
+  z-index: 0;
+}
+
+.no-number .remark-slide-number {
+  display: none;
+}
+
+/* Two-column layout */
+.left-column {
+  /* color: #777;*/
+  width: 55%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+    color: #000;
+  }
+.right-column {
+  width: 45%;
+  float: right;
+  /*padding-top: 1em;*/
+}
+
+/*From liminal*/
+/* Thanks to http://www.partage-it.com/animez-vos-presentations-remark-js/  (in French) */
+
+.remark-fading { z-index: 9; } 
+.remark-slide-container {transition: opacity 0.5s ease-out;opacity: 0;}
+.remark-visible {transition: opacity 0.5s ease-out;opacity: 1;}
+
+.title {font-size: 3.1em; color:#606060;font-weight:bold;letter-spacing:0.05em}
+.subtitle {font-size: 1.8em; font-weight: bold; }
+.author {font-size: 1.4em; color:#606060; letter-spacing:0.02em}  
+.coauthor {font-size: 1.0em; color:#606060;font-weight:bold;letter-spacing:0.02em}  
+.institution {font-size: 1.0em;}
+.date {font-size: 1.0em;font-style: italic}
+
+.cite {font-size: 0.8em; color:rgb(254,195,0);font-style: italic}
+.strike {color:salmon;text-decoration:line-through}
+/*Set color scheme for links.*/    
+a {text-decoration: none; color: #666666;text-align:center; width: 24%}
+/*Setting link properties is particular, do not change order below*/   
+a:visited {color:#666666}
+a:hover {color:rgb(254,195,0)}  
+a:active, a#active {color:#FF9700;} 
+
+/*additional styles*/
+.small {font-size: 0.7em;}
