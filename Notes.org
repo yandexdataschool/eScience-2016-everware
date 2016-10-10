@@ -1,0 +1,51 @@
+* DONE Better SHAD logo
+  - State "DONE"       from "CONSIDER"   [2016-10-04 Вт. 16:20]
+* DONE github pages for hosting
+  - State "DONE"       from "CONSIDER"   [2016-10-04 Вт. 16:40]
+* DONE Psychology to backup
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 22:20]
+  + http://www.economist.com/news/briefing/21588057-scientists-think-science-self-correcting-alarming-degree-it-not-trouble
+  + http://www.economist.com/news/leaders/21588069-scientific-research-has-changed-world-now-it-needs-change-itself-how-science-goes-wrong
+* CONSIDER
+  More emotion for Irreproducibility indicators
+* What's the difference to binder?
+  http://docs.mybinder.org/faq
+  It is intended for open source and open science.
+  Yes, we're alike. Diversity?
+* TODO Correct video 						    :anaderi:
+* TODO CI to dimuon						    :anaderi:
+* DONE Take diagram for Everware preparation
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 17:34]
+* TODO Take diagram for Reproducibility key components
+* TODO REP examples (edu)
+* DONE (Re)move challenge-driven education?
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 17:35]
+  + Challenges are older than Feudalism
+  + Disconne
+* DONE What is s15
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 17:35]
+  "Think of transition from procedural coding approach to object-oriented."
+* DONE everware-cli
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 17:35]
+  Do they exist?
+* DONE Educational usage (check)
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 17:35]
+  + Machine learning course at University of Eindhoven
+  + LHCb open data masterclass
+* DONE \pause?
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 17:35]
+* TODO Comments [4/4]
+** DONE Title on bahlf
+   - State "DONE"       from "CONSIDER"   [2016-10-04 Вт. 18:17]
+** DONE Loose LHCb
+   - State "DONE"       from "CONSIDER"   [2016-10-04 Вт. 18:17]
+** DONE Amsterdam, the Netherlands
+   - State "DONE"       from "CONSIDER"   [2016-10-04 Вт. 18:20]
+** DONE REP to summary
+   - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 22:20]
+* Suggestions
+** Give plan
+** Examples to backup
+** Summary
+   Make it clear "reproducible ML is easy"
+* TODO Will Everware work for public?

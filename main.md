@@ -11,20 +11,54 @@ class: center, middle, no-number
 
 <!-- .remark-slide-number[abc] -->
 
-.author[<u>Nikita Kazeev</u> on behalf on the Everware and REP teams]
+.author[Nikita Kazeev on behalf on the Everware and REP teams]
 
-.email[kazeevn@yandex-team.ru]
+.email[[kazeevn@yandex-team.ru](mailto:kazeevn@yandex-team.ru)]
 &nbsp;
 
 &nbsp;
-.date[2016-10-13, 4th National eScience Symposium]
-
-&nbsp;
-
-&nbsp;
-.institution[<sup>1</sup>Yandex School of Data Analysis, <sup>2</sup>Higher School of Economics NRU, <sup>3</sup>University&nbsp;of&nbsp;Manchester]
+.date[2016-10-13, 4th National eScience Symposium, Amsterdam, the Netherlands]
 
 ---
+count: false
+
+## Yandex School of Data Analysis
+https://yandexdataschool.com
+.libig[
+- A non-commercial private university
+- Free tuition, no employment obligations on
+  part of the students (yet many go to Yandex)
+- 450+ students graduated since 2007
+- Strong (50% drop out rate) education in Data & Computer Science
+- Organizes a [Machine Learning Conference](https://yandexdataschool.com/conference/)
+- Interest in interdisciplinary research (eScience)
+– from Information Retrieval to Fundamental Science
+- 25% of our students have background in Physics
+- A full member of the LHCb experiment in CERN since 2015,
+  an associate member during 2014-2015
+]
+
+---
+## Me
+.libig[
+- A data scientist
+- MS in Physics
+- Work on infrastructure optimization and anomaly detection for LHCb
+- Taught machine learning at [Machine Learning in High Energy
+  Physics Summer Schools](https://indico.cern.ch/event/497368/)
+]
+---
+
+## Plan
+.libig[
+- The problem of research irreproducibility
+- Our tools for computational experiments
+  - Everware
+  - Reproducible Experiment Platform (REP)
+- Demo
+]
+---
+
 ## Irreproducibility indicators
 
 .libig[
@@ -37,26 +71,7 @@ class: center, middle, no-number
 ]
 ---
 
-## Reproducibility concern: psychology
-
-.left-column[
-.libig[
-- 2011
-- 250 scientists headed by Brian Nosek (Center of Open Science)
-- 100 papers published in 2008 in three leading psychology journals
-- https://osf.io/ezcuj/wiki/home/
-- "only 39 could be reproduced"
-]]
-.right-column[
-&nbsp;
-<img src="images/psycho-crowd-check.png" height="520">
-]
-
-.footnote-left[http://www.nature.com/news/first-results-from-psychology-s-largest-reproducibility-test-1.17433]
-
-
----
-## Reproducibility concern: biology
+## Case in point
 .left-column[
 .libig[
 - 53 'landmark' papers in drug discovery
@@ -116,7 +131,7 @@ Platforms (with plenty of examples):
 
 #### _Computational experiment_ is a significant part of the experiment, that starts as data collected. Reproducibility of that part being just a partial answer can be aided technologically.
 
-Possible effects (see previous slide):
+Possible effects (see the previous slide):
 
 - Practical
     - better mentoring/supervision
@@ -129,13 +144,7 @@ Possible effects (see previous slide):
     - better teaching
 
 ---
-## How it's done in High Energy Physics
-
-
-<!-- in 1950-s it was a nightmare: $\sim 10^5$ papers with false discoveries/year. (?)
-So in contrast to life-sciences, significance of discovery: _p-value_ $\sim 10^{-6}$
- -->
-
+## Tools in High Energy Physics
 + __data__ storage
     + shared storage (XROOTD, AFS, EOS, CERNBOX)
 - standardized __environment__
@@ -151,22 +160,13 @@ So in contrast to life-sciences, significance of discovery: _p-value_ $\sim 10^{
 - double experiment-checks
 
 ---
-## Reproducibility meta-practices
-
-.libig[
-* early planning, pre-registering study
-* literate programming
-* open research/study
-]
-
----
 ## Reproducibility key components
 
 .libig[
 - Basic assumptions (vocabulary)
 - Data
 - Environment + Resources (CPU/GPU)
-- Code/scripts
+- Code
 - Workflow
 - Automated intermediate results checks
 - Final results (datasets, publications)
@@ -176,11 +176,14 @@ So in contrast to life-sciences, significance of discovery: _p-value_ $\sim 10^{
 ---
 ## Common environment
 
-Enter Reproducible Experiment Platform
+Enter Reproducible Experiment Platform (**REP**)
 
 --
 - Python-based (numpy, pandas, …), Jupyter-friendly
-- Unified scikit-learn-like API to many ML packages (Sklearn, XGBoost, uBoost, TMVA, Theanets, … )
+
+--
+- Unified scikit-learn-like API to many
+  ML packages (Sklearn, XGBoost, uBoost, TMVA, Theanets, … )
 
 --
 - Meta-algorithms pipelines («REP-Lego»)
@@ -198,70 +201,61 @@ Enter Reproducible Experiment Platform
 - Open-source, Apache 2.0: https://github.com/yandex/rep
 - Well-documented, supported by Yandex, http://yandex.github.io/rep/
 
-
-<!---
-## Key missing part: environment version control
-
-* language and OS agnostic,
-* capture and restore environment configuration,
-* run configurations
-
-.center[<img src="images/vm_vs_containers.png" height=300>]
-
-would enable:
-* workflow automation
-* automated results re-validation
---->
-
 ---
-layout: false
-class: center, inverse, no-number
-
-### Everware: pack it all together
-
-Running https://github.com/everware/everware-dimuon-example
-
-<video src="downloads/m3.m4v" height=400 controls="true" autoplay="false" preload="">Sorry, printed version doesn't support animation. https://github.com/everware/everware-dimuon-example</video>
-
----
-## How it works
-
-- __resources__: wherever _everware_ is installed (Yandex)
+## A reproducible study example
+https://github.com/everware/everware-dimuon-example
+--
 
 - __data__: CERNBOX
-
 --
 
-- __environment__ management: 
-    - conda or virtualenv
-    - docker
+- __common environment__: REP
 --
 
-- github: analysis __code__ versioning
-
+- __environment management__: Docker
 --
 
-- Jupyter(Hub): runs the code interactively (a-la __workflow__)
-
+- GitHub: analysis __code and environment versioning__
 --
 
 - continuous integration: intermediate __results checks__ & report
-
 --
 
-- __everware__: to rule them all (just a bunch of wrappers!)
 
-<!-- > _Everything is open source, enough resources within free hosting options_
- -->
+Steps to run:
+- install Docker
+  + https://docs.docker.com/engine/installation/
+- clone the repository
+  + `git clone https://github.com/everware/everware-dimuon-example.git`
+- build the Docker image (will need to download ~500 Mb)
+  + `docker build . -t dimuon`
+- run Docker with the repository folder mounted and Jupyter port forwarded
+  + `docker run -it -p 127.0.0.1:8888:8888 -v $(pwd):/notebooks dimuon bash`
+- insider run Jupyter
+  + `cd /notebooks && jupyter notebook --no-browser`
+- with the browser go to [127.0.0.1:8888](http://127.0.0.1:8888)
+--
+
+---
+## A reproducible study example
+https://github.com/everware/everware-dimuon-example
+- __data__: CERNBOX
+- __common environment__: REP
+- __environment management__: Docker
+- GitHub: analysis __code and environment versioning__
+- continuous integration: intermediate __results checks__ & report
+
+Or you can use *Everware* - just [click](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/everware/everware-dimuon-example).
+
 ---
 ## Everware is ...
 
 ... about re-useable science, it allows people to jump right in to your research code. Lets you launch _Jupyter_ notebooks from a git repository with a click of a button. 
 
-- https://github.com/everware
-- https://everware.rep.school.yandex.net (Yandex instance)
+- https://github.com/everware - Code
+- https://everware.rep.school.yandex.net - Yandex instance
 
-Examples:
+More examples:
 - algorithm meta-analysis, .small[https://github.com/openml/study_example]
 - gravitational waves, .small[https://github.com/anaderi/GW150914]
 - COMET, .small[https://github.com/yandexdataschool/comet-example-ci]
@@ -270,16 +264,14 @@ Examples:
 
 
 ---
-## Everware toolkit
+## Under the hood of Everware 
 
 .libig[
-- extension for _JupyterHub_:
-    - spawner for building and running custom _docker_ images
+- an extension for _JupyterHub_:
+    - a spawner for building and running custom _Docker_ images
 - integrated with:
-    + dockerhub
-    + github (for authentication and repository interaction)
-- similar to _mybinder.org_
-- guidelines
+    + Dockerhub
+    + GitHub (for authentication and repository interaction)
 ]
 
 ---
@@ -300,7 +292,7 @@ Examples:
 - re-organize internal research process
 - inner barrier for openness
 - higher incentive for mindless _borrowing_
-- divergence/potential learning curves
+- environments divergence
 ]
 .right-column[
 <img src="images/the_boost.jpg" height="480">
@@ -309,37 +301,23 @@ Examples:
 ---
 ## Research workflow with everware
 
-- User creates a git repository for his project
-- User creates some code, notebooks, figures out what libraries he needs
-- User creates `Dockerfile` where he writes all the dependencies for his code (use `everware-cli`)
-- User creates `Makefile` that simplifies start
-one of the targets in `Makefile` passes through all the essential steps of analysis
-- (optional) User tests that his analysis is runnable by one of the CI systems (e.g. on travis, adding, `.travis.yml`)
-- User tests that analysis is also runnable by everware
-- User completes his research and checks that he/she can reproduce all the figures/tables supporting his hypothesis by running corresponding notebooks (or automates cascade of notebooks execution by single `Makefile` target)
-- User publishes paper, filling-in special form link to his git repository and to everware that any member of the researcher community can pick-up from to improve his research
+<img src="images/everware-flow.png" height="480">
 
 .footnote-center[.small[https://github.com/everware/everware/wiki/How-to-embed-everware-into-research-use-cases]]
 
 ---
 ## Education workflow with everware
 
-<!-- .libig[
-1. Teacher/organizer creates environment and publishes it on docker hub
-2. Teacher creates challenge on one of the platforms (kaggle, codalab, etc)
-3. Teacher creates github repository with code that runs in environment from (1) and publishes _baseline_ results to (2)
-4. Teacher shares links 1-3 with students
-] -->
-
-.center[<img src="images/everware-teach-flow.png" height=350>]
-Used:
+.left-column[
+.center[<img src="images/everware-teach-flow.png" height=550>]]
+.right-column[
 - Python course at YSDA 2015
 - MLHEP Machine Learning summer schools 2015 and 2016
 - YSDA course on Machine learning at Imperial College London 2016
 - Kaggle competitions 2016
 - Machine learning course at University of Eindhoven
 - LHCb open data masterclass
-
+]
 ---
 ## Roadmap
 
@@ -354,14 +332,15 @@ Used:
 ## Conclusion
 
 .libig[
-- Reproducibility is not easy;
-    - ...but is not that scary,
-    - ...with a bit of openness,
-    - and technology;
-- _everware works_ for research and education;
+- Reproducibility depends on humans
+  - Can be helped with human-facing technology;
+- _Everware works_ for research and education;
     - easy to [try](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/everware/everware-dimuon-example);
-    - WIP, https://github.com/everware (open-source, care to join?);
-<!--    - See talk on LHCb open data masterclass for an extensive example. -->
+    - WIP, https://github.com/everware
+       - feature requests are welcome
+       - pull requests are most welcome
+- REP might work as a common environment for your ML study
+  - it also has nice tools to ease the routine
 ]
 
 ---
@@ -376,6 +355,17 @@ layout: false
 class: middle, center, inverse, no-number
 
 # Backup
+---
+count: false
+layout: false
+class: center, inverse, no-number
+
+## Everware demo
+
+Running https://github.com/everware/everware-dimuon-example
+
+<video src="downloads/m3.m4v" height=400 controls="true" autoplay="false" preload="">Sorry, printed version doesn't support animation. https://github.com/everware/everware-dimuon-example</video>
+
 
 ---
 count: false
@@ -390,22 +380,6 @@ count: false
 - Yandex Data Factory (https://yandexdatafactory.com)
 - Yandex School of Data Analysis 
     - (full member of LHCb since Dec'15)
-
----
-count: false
-
-## Yandex School of Data Analysis is
-- non commercial private university
-https://yandexdataschool.com (separate from Yandex)
-- 450+ students graduated since 2007
-- Graduate students receive strong education in Data & Computer
-Science (main supply of Yandex employees)
-- Interest in interdisciplinary research – Data Science methods to
-Information Retrieval and Fundamental Sciences
-- organizes bi-yearly international Machine Learning Conference,
-YAC https://yandexdataschool.com/conference/
-- 25% of our students have background in Physics
-- full member of LHCb since 2015, associate member during 2014-2015
 
 ---
 count: false
