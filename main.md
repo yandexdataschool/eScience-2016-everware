@@ -26,18 +26,19 @@ layout: true
 ---
 
 ## Yandex School of Data Analysis
-https://yandexdataschool.com
+A noncommercial private university https://yandexdataschool.com
 .libig[
-- A non-commercial private university
-- Free tuition, no employment obligations on
-  part of the students (yet many go to Yandex)
-- 450+ students graduated since 2007
-- Strong education in Data & Computer Science
-- Organizes a [Machine Learning Conference](https://yandexdataschool.com/conference/)
-- Interest in interdisciplinary research (eScience)
-– from Information Retrieval to Fundamental Science
-- A full member of the LHCb experiment at CERN since 2015,
-  an associate member during 2014-2015
+- Education:
+  - Strong courses in Data & Computer Science
+  - Free tuition
+  - No employment obligations on
+    part of the students (yet many go to Yandex)
+  - 450+ students graduated since 2007
+- Research
+  - Organizes a [Machine Learning Conference](https://yandexdataschool.com/conference/)
+  - Interest in interdisciplinary research (eScience)
+    – from Information Retrieval to Particle Physics
+  - A full member of the LHCb experiment at CERN
 ]
 
 ---
@@ -100,6 +101,7 @@ A new study is under way and to be completed in 2017
 
 ## Nature's Reproducibility Survey
 
+
 .center[<img src="images/is_crisis.jpeg" height=490>]
 
 .footnote-left[
@@ -108,15 +110,13 @@ A new study is under way and to be completed in 2017
 ]
 
 ---
-.center[<img src="images/the_boost.jpg" height=650>]
----
+.left-column[
+.center[<img src="images/the_boost.jpg" height=650>]]
 
-## ...part of the story
-
-#### _Computational experiment_ is a significant part of the experiment, that starts as data collected. Reproducibility of that part being just a partial answer can be aided technologically.
-
-Possible effects (see the previous slide):
-
+--
+.right-column[
+#### _Computational experiment_ is a significant part of an experiment, that starts after the data is collected. 
+Possible rffects of reproducible computation:
 - Practical
     - better mentoring/supervision
     - more within-lab validation
@@ -126,14 +126,15 @@ Possible effects (see the previous slide):
 - Educational
     - wider access to the best practices 
     - better teaching
-
+]
 ---
 
-## Tools in High Energy Physics
+
+## High Energy Physics
 + __data__ storage
     + shared storage (XROOTD, AFS, EOS, CERNBOX)
 - standardized __environment__
-    - software: ROOT, minuit, RooFit, experiment-stack, ...
+    - software: ROOT, minuit, experiments software stacks	, ...
     - computational cluster (e.g. `lxplus`)
 + __code__ versioning repository (gitlab)
 - advanced analysis approaches
@@ -142,11 +143,10 @@ Possible effects (see the previous slide):
 + collaborative culture
     + q&a groups, experts
     + publishing workflow
-- double experiment-checks
 
 ---
 
-## Reproducibility key components
+## Reproducible computational study key components
 
 .libig[
 - Basic assumptions (vocabulary)
@@ -240,7 +240,7 @@ Or you can use *Everware* - just [click](https://everware.rep.school.yandex.net/
 
 ## Everware is ...
 
-... about re-useable science, it allows people to jump right in to your research code. Lets you launch _Jupyter_ notebooks from a git repository with a click of a button. 
+... about re-useable science, it allows people to jump right into your research code. Lets you launch _Jupyter_ notebooks from a git repository with a click of a button. 
 
 - https://github.com/everware - Code
 - https://everware.rep.school.yandex.net - Yandex instance
