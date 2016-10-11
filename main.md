@@ -21,6 +21,9 @@ class: center, middle, no-number
 
 ---
 count: false
+layout: true
+.header-right[Nikita Kazeev, YSDA, Reproducible Machine Learning for Humans]
+---
 
 ## Yandex School of Data Analysis
 https://yandexdataschool.com
@@ -29,21 +32,24 @@ https://yandexdataschool.com
 - Free tuition, no employment obligations on
   part of the students (yet many go to Yandex)
 - 450+ students graduated since 2007
-- Strong (50% drop out rate) education in Data & Computer Science
+- Strong education in Data & Computer Science
 - Organizes a [Machine Learning Conference](https://yandexdataschool.com/conference/)
 - Interest in interdisciplinary research (eScience)
 – from Information Retrieval to Fundamental Science
-- 25% of our students have background in Physics
-- A full member of the LHCb experiment in CERN since 2015,
+- A full member of the LHCb experiment at CERN since 2015,
   an associate member during 2014-2015
 ]
 
 ---
+
 ## Me
 .libig[
 - A data scientist
-- MS in Physics
-- Work on infrastructure optimization and anomaly detection for LHCb
+- MSc in Physics
+- Work for the LHCb collaboration at CERN 
+  - Data storage optimization
+  - A search engine for physics data
+  - An automated anomaly detection systAem
 - Taught machine learning at [Machine Learning in High Energy
   Physics Summer Schools](https://indico.cern.ch/event/497368/)
 ]
@@ -65,35 +71,33 @@ https://yandexdataschool.com
 - ‘Which version of my code I used to generate figure 13?’
 - ‘The new student wants to reuse that model I published three years ago but he can’t reproduce the figures’
 - ‘I thought I’ve used the same parameters but I’m getting different results…’
-- ‘On what dataset have I compared algorithms exactly?’
+- ‘Which dataset exactly did I use for algorithm comparison?‘
 - ‘Why did I do that?!’
 - ‘It worked yesterday!!’
 ]
 ---
 
-## Case in point
-.left-column[
-.libig[
-- 53 'landmark' papers in drug discovery
-- 2012 by Amgen (US company)
-- "confirmed in only 6 (11%) cases"
-]]
-.right-column[
-.libig[
-- 54 papers in cancer biology 2010-2012
-- 2013
-- US$1.6 million
-- [results, spreadsheet](https://docs.google.com/spreadsheets/d/1V_znJ1zrYyWpmCLTL3dZU7QWcGAIOeyav_L6UGuFBkw/edit?pli=1#gid=0)
-- .small[https://osf.io/e81xl/wiki/home/]
-- to be completed by 2017
-]]
+## Cases in point: Medical science
 
-.footnote-left[http://www.nature.com/nature/journal/v483/n7391/full/483531a.html
+Amgen (a commercial company) in 2012 
+- 53 landmark papers in cancer drug development
+- Scientific findings confirmed only in 6 (11%) cases
 
-http://www.nature.com/news/cancer-reproducibility-project-scales-back-ambitions-1.18938
+Bayer (a commercial company) in 2011
+- 67 projects
+- Results confirmed in 20-25% cases
+
+A new study is under way and to be completed in 2017
+- https://osf.io/e81xl/wiki/home/
+
+.footnote-left[
+* http://www.nature.com/nature/journal/v483/n7391/full/483531a.html
+* http://www.nature.com/news/cancer-reproducibility-project-scales-back-ambitions-1.18938
+* http://www.nature.com/nrd/journal/v10/n9/full/nrd3439-c1.html
 ]
 
 ---
+
 ## Nature's Reproducibility Survey
 
 .center[<img src="images/is_crisis.jpeg" height=490>]
@@ -102,32 +106,12 @@ http://www.nature.com/news/cancer-reproducibility-project-scales-back-ambitions-
 * [Nature: 1,500 scientists lift the lid on reproducibility](http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970) by Monya Baker
 * [raw survey data (link)](https://figshare.com/articles/Nature_Reproducibility_survey/3394951/1)
 ]
----
-background-image: url(images/the_boost.jpg)
-
-<!---
-## Rise of challenge-driven education
-
-Learning by solving real-world problems in interdisciplinary & international projects.
-
-- Imagine Cup, http://imaginecup.com/
-- ackathons, e.g., http://webfest.web.cern.ch/
-- Open data days, http://opendataday.org/
-- Guide to Challenge Driven Education, .small[https://www.kth.se/social/group/guide-to-challenge-d/]
-
-Platforms (with plenty of examples):
-
-- Kaggle, https://www.kaggle.com/
-- Codalab, https://competitions.codalab.org/
-- ...
-#### Complication and boost factors are similar to research reproducibility.
--->
-
-
 
 ---
+.center[<img src="images/the_boost.jpg" height=650>]
+---
+
 ## ...part of the story
-
 
 #### _Computational experiment_ is a significant part of the experiment, that starts as data collected. Reproducibility of that part being just a partial answer can be aided technologically.
 
@@ -144,6 +128,7 @@ Possible effects (see the previous slide):
     - better teaching
 
 ---
+
 ## Tools in High Energy Physics
 + __data__ storage
     + shared storage (XROOTD, AFS, EOS, CERNBOX)
@@ -160,6 +145,7 @@ Possible effects (see the previous slide):
 - double experiment-checks
 
 ---
+
 ## Reproducibility key components
 
 .libig[
@@ -174,6 +160,7 @@ Possible effects (see the previous slide):
 
 
 ---
+
 ## Common environment
 
 Enter Reproducible Experiment Platform (**REP**)
@@ -202,6 +189,7 @@ Enter Reproducible Experiment Platform (**REP**)
 - Well-documented, supported by Yandex, http://yandex.github.io/rep/
 
 ---
+
 ## A reproducible study example
 https://github.com/everware/everware-dimuon-example
 --
@@ -237,6 +225,7 @@ Steps to run:
 --
 
 ---
+
 ## A reproducible study example
 https://github.com/everware/everware-dimuon-example
 - __data__: CERNBOX
@@ -248,6 +237,7 @@ https://github.com/everware/everware-dimuon-example
 Or you can use *Everware* - just [click](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/everware/everware-dimuon-example).
 
 ---
+
 ## Everware is ...
 
 ... about re-useable science, it allows people to jump right in to your research code. Lets you launch _Jupyter_ notebooks from a git repository with a click of a button. 
@@ -264,6 +254,7 @@ More examples:
 
 
 ---
+
 ## Under the hood of Everware 
 
 .libig[
@@ -275,6 +266,7 @@ More examples:
 ]
 
 ---
+
 ## Pros &amp; cons
 
 .left-column[
@@ -299,6 +291,7 @@ More examples:
 ]
 
 ---
+
 ## Research workflow with everware
 
 <img src="images/everware-flow.png" height="480">
@@ -306,10 +299,11 @@ More examples:
 .footnote-center[.small[https://github.com/everware/everware/wiki/How-to-embed-everware-into-research-use-cases]]
 
 ---
+
 ## Education workflow with everware
 
 .left-column[
-.center[<img src="images/everware-teach-flow.png" height=550>]]
+.center[<img src="images/everware-teach-flow.svg" height=550>]]
 .right-column[
 - Python course at YSDA 2015
 - MLHEP Machine Learning summer schools 2015 and 2016
@@ -319,6 +313,7 @@ More examples:
 - LHCb open data masterclass
 ]
 ---
+
 ## Roadmap
 
 .libig[
@@ -329,6 +324,7 @@ More examples:
 - .gray[Bring your own resources computational model]
 ]
 ---
+
 ## Conclusion
 
 .libig[
@@ -364,11 +360,18 @@ class: center, inverse, no-number
 
 Running https://github.com/everware/everware-dimuon-example
 
-<video src="downloads/m3.m4v" height=400 controls="true" autoplay="false" preload="">Sorry, printed version doesn't support animation. https://github.com/everware/everware-dimuon-example</video>
-
+<video src="downloads/run-dimuon-480p.m4v" height=480 controls="true" autoplay="false" preload="">
+Sorry, printed version doesn't support animation.
+<img src="images/runme.png", width=800>
+</video>
 
 ---
 count: false
+layout: true
+.header-right[Nikita Kazeev, YSDA, Reproducible Machine Learning for Humans]
+---
+count: false
+
 ## Yandex services landscape (est 1997)
 - Web search
 - Image search
@@ -383,7 +386,8 @@ count: false
 
 ---
 count: false
-### References
+
+## References
 
 - http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970
 - https://rescience.github.io/read/
@@ -399,6 +403,7 @@ count: false
 
 ---
 count: false
+
 ## Dealing with cognitive bias
 
 .center[<img src="images/cognitive_biases.jpeg" height=500>]

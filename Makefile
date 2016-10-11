@@ -1,5 +1,4 @@
 SHELL := /bin/bash
-INSTALL_NAME = $(subst .src,,$(shell basename `pwd`))
 MD = $(shell ls *.md)
 DECKTAPEHOME = ~/git/decktape
 HTML = main.html
@@ -36,19 +35,3 @@ jpg: $(HTML) start
 	 time $(DECKTAPEHOME)/bin/phantomjs $(DECKTAPEHOME)/decktape.js $(DECKTAPEARGS) $(JPGARGS) remark http://localhost:8000/$< $(HTMLPDF)
 	 ls -al screenpages
 
-install: $(HTMLPDF)
-	cp -f $? ../${INSTALL_NAME}.pdf
-
-update_common:
-	test -d ../../_common
-	cp Makefile ../../_common
-
-from_common: ../../_common/Makefile clean
-	@diff -u $< Makefile ; \
-		if [[ $$? -ne 0 ]] ; then \
-			[ -n "$(FORCE)" ] || \
-				( echo "Press ENTER to to overwrite local (+) or ^C otherwise?" && read ) ; \
-			cp ../../_common/Makefile . ; \
-		else \
-			echo "Makefile is the same as $<" ; \
-		fi

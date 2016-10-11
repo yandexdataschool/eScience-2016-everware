@@ -34,7 +34,8 @@
   + LHCb open data masterclass
 * DONE \pause?
   - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 17:35]
-* TODO Comments [4/4]
+* DONE Comments [4/4]
+  - State "DONE"       from "CONSIDER"   [2016-10-09 Вс. 22:26]
 ** DONE Title on bahlf
    - State "DONE"       from "CONSIDER"   [2016-10-04 Вт. 18:17]
 ** DONE Loose LHCb
