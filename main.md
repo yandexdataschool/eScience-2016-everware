@@ -246,11 +246,12 @@ Or you can use *Everware* - just [click](https://everware.rep.school.yandex.net/
 - https://everware.rep.school.yandex.net - Yandex instance
 
 More examples:
-- algorithm meta-analysis, .small[https://github.com/openml/study_example]
-- gravitational waves, .small[https://github.com/anaderi/GW150914]
-- COMET, .small[https://github.com/yandexdataschool/comet-example-ci]
-
---
+- Comparison of ML algorithms; R, Everware, CircleCI
+  .small[https://github.com/openml/study_example]
+- Gravitational waves identification (LIGO experiment); REP, Everware
+  .small[https://github.com/anaderi/GW150914]
+- Search for particle traces (COMET experiment); Everware, TravisCI
+  .small[https://github.com/yandexdataschool/comet-example-ci]
 
 
 ---
@@ -261,7 +262,7 @@ More examples:
 - an extension for _JupyterHub_:
     - a spawner for building and running custom _Docker_ images
 - integrated with:
-    + Dockerhub
+    + Docker Hub (for getting Docker images)
     + GitHub (for authentication and repository interaction)
 ]
 
@@ -276,15 +277,13 @@ More examples:
 - wider access to the best practices
 - simplified cross-lab validation
 - good incentive for formal reproduction
-- _good thing for industry career track development_
-- access to wider set of practices
 
 ### Cons
 - learning a bit of open-source technology
 - re-organize internal research process
 - inner barrier for openness
 - higher incentive for mindless _borrowing_
-- environments divergence
+- promotes users to create unique environments
 ]
 .right-column[
 <img src="images/the_boost.jpg" height="480">
@@ -306,11 +305,11 @@ More examples:
 .center[<img src="images/everware-teach-flow.svg" height=550>]]
 .right-column[
 - Python course at YSDA 2015
-- MLHEP Machine Learning summer schools 2015 and 2016
-- YSDA course on Machine learning at Imperial College London 2016
+- [Machine Learning in High Energy Physics summer school 2016](https://github.com/yandexdataschool/mlhep2016)
+- [YSDA course on Machine learning at Imperial College London 2016](https://github.com/yandexdataschool/MLatImperial2016)
 - Kaggle competitions 2016
 - Machine learning course at University of Eindhoven
-- LHCb open data masterclass
+- [LHCb open data masterclass](https://github.com/lhcb/opendata-project)
 ]
 ---
 
@@ -321,7 +320,7 @@ More examples:
 - Automatic capture of environment (integrate with repro-zip)
 - Integration with publishing resources ([gitxiv](https://gitxiv.com), re-science, [openml](https://openml.org))
 - Not only jupyter-based computations
-- .gray[Bring your own resources computational model]
+- Bring your own resources computational model
 ]
 ---
 
