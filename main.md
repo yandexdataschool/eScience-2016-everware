@@ -237,7 +237,6 @@ Steps to run:
 - insider run Jupyter
   + `cd /notebooks && jupyter notebook --no-browser`
 - with the browser go to [127.0.0.1:8888](http://127.0.0.1:8888)
---
 
 ---
 
@@ -260,9 +259,9 @@ class: center, inverse, no-number
 Running https://github.com/everware/everware-dimuon-example
 
 <video src="downloads/run-dimuon-720p.m4v"
-       height="500" preload data-autoplay>
-       Sorry, the printed version doesn't support animation.
-       <img src="images/runme.png", width=800>
+       height="500" controls preload data-autoplay>
+<!--       Sorry, the printed version doesn't support animation.
+       <img src="images/runme.png", width=800> -->
 </video>
 ---
 
