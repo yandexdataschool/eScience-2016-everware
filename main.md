@@ -25,6 +25,21 @@ layout: true
 .header-right[Nikita Kazeev, YSDA, Reproducible Machine Learning for Humans]
 ---
 
+## Yandex
+.libig[
+- A Dutch company (according to NASDAQ)
+- The leading web search engine in Russia
+- Image search
+- Speech recognition
+- Car traffic prediction
+- Mail and spam filtering
+- Natural language translation
+- [Yandex Data Factory](https://yandexdatafactory.com) -
+  data science for business
+- **Yandex School of Data Analysis**
+]
+---
+
 ## Yandex School of Data Analysis
 A noncommercial private university https://yandexdataschool.com
 .libig[
@@ -35,7 +50,7 @@ A noncommercial private university https://yandexdataschool.com
     part of the students (yet many go to Yandex)
   - 450+ students graduated since 2007
 - Research
-  - Organizes a [Machine Learning Conference](https://yandexdataschool.com/conference/)
+  - Organizes [Machine Learning Conference](https://yandexdataschool.com/conference/)
   - Interest in interdisciplinary research (eScience)
     – from Information Retrieval to Particle Physics
   - A full member of the LHCb experiment at CERN
@@ -50,7 +65,7 @@ A noncommercial private university https://yandexdataschool.com
 - Work for the LHCb collaboration at CERN 
   - Data storage optimization
   - A search engine for physics data
-  - An automated anomaly detection systAem
+  - An automated anomaly detection system
 - Taught machine learning at [Machine Learning in High Energy
   Physics Summer Schools](https://indico.cern.ch/event/497368/)
 ]
@@ -237,6 +252,19 @@ https://github.com/everware/everware-dimuon-example
 Or you can use *Everware* - just [click](https://everware.rep.school.yandex.net/hub/oauth_login?repourl=https://github.com/everware/everware-dimuon-example).
 
 ---
+layout: false
+class: center, inverse, no-number
+
+## Everware demo
+
+Running https://github.com/everware/everware-dimuon-example
+
+<video src="downloads/run-dimuon-720p.m4v"
+       height=500 controls="true" autoplay="false" preload="">
+       Sorry, printed version doesn't support animation.
+       <img src="images/runme.png", width=800>
+</video>
+---
 
 ## Everware is ...
 
@@ -350,38 +378,11 @@ layout: false
 class: middle, center, inverse, no-number
 
 # Backup
----
-count: false
-layout: false
-class: center, inverse, no-number
-
-## Everware demo
-
-Running https://github.com/everware/everware-dimuon-example
-
-<video src="downloads/run-dimuon-480p.m4v" height=480 controls="true" autoplay="false" preload="">
-Sorry, printed version doesn't support animation.
-<img src="images/runme.png", width=800>
-</video>
 
 ---
 count: false
 layout: true
 .header-right[Nikita Kazeev, YSDA, Reproducible Machine Learning for Humans]
----
-count: false
-
-## Yandex services landscape (est 1997)
-- Web search
-- Image search
-- Speech recognition
-- Car traffic prediction
-- Mail and spam filtering
-- Natural language translation
-- Market (shopwindow for internet shops)
-- Yandex Data Factory (https://yandexdatafactory.com)
-- Yandex School of Data Analysis 
-    - (full member of LHCb since Dec'15)
 
 ---
 count: false
