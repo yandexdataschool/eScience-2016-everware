@@ -260,8 +260,8 @@ class: center, inverse, no-number
 Running https://github.com/everware/everware-dimuon-example
 
 <video src="downloads/run-dimuon-720p.m4v"
-       height="300" controls preload="">
-       Sorry, printed version doesn't support animation.
+       height="480" controls preload autoplay>
+       Sorry, the printed version doesn't support animation.
        <img src="images/runme.png", width=800>
 </video>
 ---
