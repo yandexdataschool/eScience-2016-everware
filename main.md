@@ -259,7 +259,7 @@ class: center, inverse, no-number
 Running https://github.com/everware/everware-dimuon-example
 
 <video src="downloads/run-dimuon-720p.m4v"
-       height="500" preload data-autoplay>
+       height="500" controls preload data-autoplay>
 <!--       Sorry, the printed version doesn't support animation.
        <img src="images/runme.png", width=800> -->
 </video>
